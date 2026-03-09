@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+.logo{
+  align-items: center;
+  display: flex;
+}
+nav ul {
+  list-style: none; /* mật dấu chấm mặc định của thẻ ul */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  font-size:14px ;
+}
+.menu ul li:last-child{
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .header{
+    padding: 16px 8px;
+    background-color: black;
+  }
+}
