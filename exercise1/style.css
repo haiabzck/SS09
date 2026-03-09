@@ -1,10 +1,11 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    
 }
 .header {
   background-color: rgb(48, 48, 48);
@@ -12,7 +13,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 100px;
+  padding: 20px 100px;
 }
 .logo{
   align-items: center;
@@ -35,8 +36,46 @@ nav ul {
   padding: 8px 16px;
   border-radius: 5px;
 }
-
-
+.hero{
+  background-color: rgb(48, 48, 48);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.hero h1{
+  font-size: 65px;
+  width: 65%;
+  margin-top: 30px;
+}
+.hero h1 span{
+  color: blue;
+}
+.hero p{
+  font-size: 22px;
+  margin: 15px;
+}
+.btn-featured{
+  background-color:rgb(48, 48, 48) ;
+  color: white;
+  padding: 10px 30px;
+  margin: 0 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.btn-started{
+  background-color: blue;
+  color: white;
+  padding: 10px 30px;
+  margin: 0 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
