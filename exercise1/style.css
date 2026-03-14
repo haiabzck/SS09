@@ -80,11 +80,17 @@ nav ul {
   border-radius: 5px;
 }
 .banner{
-  width: 86%;
+  width: 1200px;
+  height: 514px;
   margin: 20px 0 76px 0;
+  overflow: hidden;
 }
 .banner img{
-  width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 .box-build{
   width: 85%;
@@ -140,6 +146,10 @@ nav ul {
   background-color: #1A1919;
   margin-bottom: 90px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .large img{
   width: 55px;
@@ -192,9 +202,10 @@ nav ul {
   padding: 10px;
 }
 .large p{
-  margin-top: 20px;
-   letter-spacing: 2px;
-   margin-bottom: 107px;
+    width: 58%;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 107px;
 }
 .hero1{
   padding: 0 8%;
@@ -292,6 +303,7 @@ h6{
   height: 480px;
   overflow: hidden;
   margin: 155px 0;
+  border-radius: 15px;
   
 }
 .enjoy-content{
@@ -310,7 +322,7 @@ h6{
   object-fit: cover;
   object-position: center;
   filter: brightness(80%);
-  border-radius: 15px;
+  
 }
 .join{
   border-bottom: 1px solid #282828;
@@ -320,10 +332,11 @@ h6{
   
 }
 .join-content{
+  border-radius: 15px;
   background-color: #3775ED;
   margin: 50px 0;
   padding: 48px 0;
-  border-radius: 15px;
+  
 }
 .join-content button{
   padding: 15px 60px;
@@ -354,11 +367,229 @@ h6{
   height: 20px;
 }
 @media screen and (max-width: 768px) {
+  body{
+    background-image: none;
+    background-color: black;
+  }
   .menu {
     display: none;
   }
   .header{
     padding: 16px 8px;
     background-color: black;
+    width: 100%;
+  }
+  .hero{
+    padding: 0;
+  }
+  .hero h1{
+    font-size: 35px;
+    width: 100%;
+  }
+  .hero p{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .btn-started{
+    display: block;
+    padding: 16px 134px;
+    width: 95%;
+    margin-bottom:20px;
+  }
+  .btn-featured{
+    display: block;
+    padding: 16px 134px;
+    width: 95%;
+    background-color: black;
+  }
+  .hero-action{
+    margin-top: 12px;
+  }
+  .banner{
+    width: 385px;
+    height: 348px;
+    margin-bottom: 71px;
+  }
+  .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .hero h2{
+    margin: 0 15px;
+    font-size: 24px;
+  }
+  .box-build{
+    margin:14px 10px  0;
+    width: 100%;
+    border-bottom: none;
+
+  }
+  .hero p:last-of-type{
+     font-size: 16px;
+   }
+   .box-itiem{
+    width: 100%;
+    margin: 0 10px;
+   }
+   .box-itiem h3{
+    font-size: 22px;
+   }
+   .large{
+    padding:130px 6px ;
+   }
+   .large p{
+    margin: 7px 0 0 0;
+    letter-spacing:normal;
+    width: 100%;
+   }
+   .large img{
+    width: 40px;
+    height: 40px;
+   }
+   .Ellipse10{
+    left: 27px;
+    top: 60px;
+   }
+   .Ellipse11{
+    left: 27px;
+    bottom: 73px;
+   }
+   .Ellipse13{
+    top: 80px;
+    left: 127px;
+   }
+   .Ellipse14{
+    bottom: 73px;
+    right: 124px
+   }
+   .Ellipse15{
+    bottom: 33px;
+    right: 30px;
+   }
+   .Ellipse16{
+    right: 30px;
+    top: 75px;
+   }
+   .Ellipse18{
+    left: 103px;
+    bottom: 24px;
+   }
+   .Ellipse19{
+    right: 119px;
+    top: 20px;
+   }
+   .hero1{
+    margin-top: 62px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .hero1 h2{
+    font-size: 24px;
+   }
+   .hero1 p{
+    font-size: 16px;
+    width: 80%;
+    line-height: 1.5;
+   }
+  .feature-developers{
+    margin-top: 33px;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .box-feature{
+    height: 304px;
+    margin: 0 0 20px 0;
+  }
+  .box-feature img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .status h6{
+    text-align: left;
+  }
+  .status p{
+    font-size: 14px;
+    width: 100%;
+  }
+  .status p img{
+    margin: 0 ;
+  }
+  .status p span img{
+    margin-right: 5px;
+  }
+  .hero1-action{
+    margin-top: 45px;
+    padding-bottom: 30px;
+    width: 95%;
+  }
+  .hero1-action .btn-started{
+    display: inline;
+    padding: 17px 61px;
+    width: 60%;
+  }
+  .hero2{
+    padding: 20px 10px;
+  }
+  .hero2 h2{
+    font-size: 26px;
+    margin-top: 24px;
+  }
+  .hero2 p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .container{
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .content{
+    width: 100%;
+  }
+  .content p{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .name{
+    font-size: 16px;
+  }
+  .enjoy{
+    width: 100%;
+    margin: 50px 0 20px 0;
+    border-radius: 0;
+  }
+  .enjoy-content{
+    width: 60%;
+    left: 22px;
+    top: 129px;
+  }
+  .enjoy-content p{
+    padding: 0;
+  }
+  .enjoy-content h1, .join h1{
+    font-size: 28px;
+  }
+  .join-content{
+    margin-top: 40px;
+    padding: 49px 21px 33px 25px;
+  }
+  .join{
+    width: 100%;
+    border-bottom: 0;
+    text-align: left;
+    
+  }
+  .footer{
+    display: none ;
   }
 }
